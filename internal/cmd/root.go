@@ -5,7 +5,7 @@ import (
 	"os"
 	fp "path/filepath"
 
-	"github.com/go-shiori/shiori/internal/database"
+	"github.com/sliuweimin/shiori/internal/database"
 	apppaths "github.com/muesli/go-app-paths"
 	"github.com/spf13/cobra"
 )
@@ -90,7 +90,7 @@ func getDataDir(portableMode bool) (string, error) {
 	}
 
 	// Try to use platform specific app path
-	userScope := apppaths.NewScope(apppaths.User, "shiori", "shiori")
+	userScope := apppaths.NewScope(apppaths.User, "shiori")
 	dataDir, err := userScope.DataDir()
 	if err == nil {
 		return dataDir, nil

@@ -13,8 +13,8 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/go-shiori/shiori/internal/model"
-	"github.com/go-shiori/warc"
+	"github.com/sliuweimin/shiori/internal/model"
+	"github.com/sliuweimin/warc"
 	"github.com/julienschmidt/httprouter"
 )
 

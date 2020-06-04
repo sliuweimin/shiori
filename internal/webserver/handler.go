@@ -5,9 +5,9 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/go-shiori/shiori/internal/database"
-	"github.com/go-shiori/shiori/internal/model"
-	"github.com/go-shiori/warc"
+	"github.com/sliuweimin/shiori/internal/database"
+	"github.com/sliuweimin/shiori/internal/model"
+	"github.com/sliuweimin/warc"
 	cch "github.com/patrickmn/go-cache"
 )
 
