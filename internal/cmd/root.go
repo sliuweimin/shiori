@@ -89,12 +89,6 @@ func getDataDir(portableMode bool) (string, error) {
 		return dataDir, nil
 	}
 
-	// Try to use platform specific app path
-	userScope := apppaths.NewScope(apppaths.User, "shiori")
-	dataDir, err := userScope.DataDirs()
-	if err == nil {
-		return dataDir, nil
-	}
 
 	// When all fail, use current working directory
 	return ".", nil
